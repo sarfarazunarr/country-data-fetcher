@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Data Fetcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="countriescontainer">
+        <div class="contrysearch">
+            <input type="text" id="countrysearchbox" placeholder="Enter Country Name...">
+            <button onclick="getdata()">Search</button>
+        </div>
+        <div class="country-data">
+            <h3>Data of: <span id="countryName"></span></h3>
+            <div class="img-section">
+                <img id="flag" alt="">
+            </div>
+            <p id="nextButton"
+                style="text-align: right; font-family: Montserrat; font-size: 15px; color: black; padding: 5px 6px; background-color: white; border-radius: 5px; cursor: pointer; display: none;">
+                Next</p>
+            <table>
+                <tr>
+                    <td>Country Name</td>
+                    <td id="commonName">Hello</td>
+                </tr>
+                <tr>
+                    <td>Official Name</td>
+                    <td id="officialName"></td>
+                </tr>
+                <tr>
+                    <td>TLD</td>
+                    <td id="tld"></td>
+                </tr>
+                <tr>
+                    <td>Independent</td>
+                    <td id="Independent"></td>
+                </tr>
+                <tr>
+                    <td>Currency</td>
+                    <td id="currency"></td>
+                </tr>
+                <tr>
+                    <td>Dialing Code</td>
+                    <td id="dialingcode"></td>
+                </tr>
+                <tr>
+                    <td>Capital</td>
+                    <td id="capital"></td>
+                </tr>
+                <tr>
+                    <td>Region & Sub Region</td>
+                    <td id="region"></td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td id="language"></td>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td id="population"></td>
+                </tr>
+                <tr>
+                    <td>Timezones</td>
+                    <td id="timezone"></td>
+                </tr>
+                <tr>
+                    <td>Continent</td>
+                    <td id="continent"></td>
+                </tr>
+                <tr>
+                    <td>Borders</td>
+                    <td id="borders"></td>
+                </tr>
+                <tr>
+                    <td>Area</td>
+                    <td id="area"></td>
+                </tr>
+                <tr>
+                    <td>Weak Start Day</td>
+                    <td id="startday"></td>
+                </tr>
+                <tr>
+                    <td>View Map</td>
+                    <td><a id="viewmap">View Map</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="intro-section">
+            <h4 id="info-heading">Data Will Display Here...</h4>
+            <div id="loader" class="fancy-spinner">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
